@@ -97,11 +97,35 @@ def count_trainable_parameters(model):
 
     return total
 
-# Step 8 - trainable_fraction (not yet solved)
-# TODO: implement
+# Step 8 - trainable_fraction
+def trainable_fraction(trainable_count, total_count):
+    # TODO: return the fraction of parameters that are trainable.
+    return trainable_count / total_count
 
-# Step 9 - build_instruction_examples (not yet solved)
-# TODO: implement
+# Step 9 - build_instruction_examples
+def build_instruction_examples():
+    return [
+        {
+            "instruction": "Who is Spider-Man?",
+            "response": "Spider-Man is a Marvel superhero whose real identity is Peter Parker, a young hero with spider-like abilities."
+        },
+        {
+            "instruction": "Who is Iron Man?",
+            "response": "Iron Man is Marvel's Tony Stark, a billionaire inventor who uses an advanced armored suit to become a superhero."
+        },
+        {
+            "instruction": "What is the MCU?",
+            "response": "The Marvel Cinematic Universe is a connected franchise of superhero films and television series based on Marvel characters."
+        },
+        {
+            "instruction": "Who is Thanos?",
+            "response": "Thanos is a powerful Marvel villain who seeks the Infinity Stones to gain control over the universe."
+        },
+        {
+            "instruction": "What is Avengers Endgame?",
+            "response": "Avengers Endgame is a Marvel film in which the surviving Avengers attempt to undo the destruction caused by Thanos."
+        }
+    ]
 
 # Step 10 - format_instruction_example (not yet solved)
 # TODO: implement
